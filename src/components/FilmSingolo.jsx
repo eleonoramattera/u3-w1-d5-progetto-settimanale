@@ -6,9 +6,12 @@ class FilmSingolo extends Component {
     filmOver: false,
   };
 
-  handleFilmOver = () => {
-    this.setState({ filmOver: this.props.FilmSingolo.Title });
-  };
+  /*handleFilmOver = () => {
+    {this.state.filmOver === "true"
+    ( this.setState({ filmOver: this.props.FilmSingolo.Title });
+)}
+  };*/
+
   render() {
     return (
       <>
