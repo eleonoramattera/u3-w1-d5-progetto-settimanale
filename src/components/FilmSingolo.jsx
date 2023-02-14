@@ -3,13 +3,17 @@ import { Col, Card } from "react-bootstrap";
 
 class FilmSingolo extends Component {
   state = {
-    selected: false,
+    filmOver: false,
+  };
+
+  handleFilmOver = () => {
+    this.setState({ filmOver: this.props.FilmSingolo.Title });
   };
   render() {
     return (
       <>
         <Col className=" mb-5">
-          <Card className="cardFilm">
+          <Card className="cardFilm" /*onMouseOver={handleFilmOver}*/>
             <Card.Img style={{ height: "100%" }} src={this.props.FilmSingolo.Poster} />
           </Card>
         </Col>
