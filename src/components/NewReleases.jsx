@@ -20,7 +20,7 @@ class NewReleases extends Component {
         if (data.res) {
           this.setState({ loading: false, error: true, errorMessage: "ERRORE" });
         } else {
-          this.setState({ film: data.Search.splice(0, 6), loading: false, error: false });
+          this.setState({ film: data.Search.slice(1, 7), loading: false, error: false });
         }
       }
     } catch (error) {
