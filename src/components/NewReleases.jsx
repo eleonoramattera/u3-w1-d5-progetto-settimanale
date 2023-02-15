@@ -10,7 +10,7 @@ class NewReleases extends Component {
     errorMessage: "",
   };
 
-  fetchFilmTrendingNow = async () => {
+  fetchNewReleases = async () => {
     try {
       const res = await fetch("http://www.omdbapi.com/?apikey=e340c445&s=pretty little liars");
       if (res.ok) {
@@ -33,7 +33,7 @@ class NewReleases extends Component {
   };
 
   componentDidMount = () => {
-    this.fetchFilmTrendingNow();
+    this.fetchNewReleases();
   };
 
   render() {

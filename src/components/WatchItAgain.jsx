@@ -10,7 +10,7 @@ class WatchItAgain extends Component {
     errorMessage: "",
   };
 
-  fetchFilmTrendingNow = async () => {
+  fetchFilmWatchItAgain = async () => {
     try {
       const res = await fetch("http://www.omdbapi.com/?apikey=e340c445&s=ouija");
       if (res.ok) {
@@ -33,7 +33,7 @@ class WatchItAgain extends Component {
   };
 
   componentDidMount = () => {
-    this.fetchFilmTrendingNow();
+    this.fetchFilmWatchItAgain();
   };
 
   render() {
